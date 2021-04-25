@@ -1,0 +1,30 @@
+{% extends 'core/base.html'%}
+{% load static%}
+{% block content%}
+<div class="mt-5">
+  <div class="text-center">
+    <img src="{% static 'core/image/no.jpg'%}" alt="" class="rounded-circle" width="280px" height="300px">
+
+  </div>
+
+ <div class="mt-4 text-white mx-5 text-justify" >
+   <h1 class="text-weight-bold st-font">Hello,</h1>
+   <div class="px-4" style="line-height:2rem;">
+     <p style="text-indent:100px">
+     I am <b class="text-warning"> Aminul Islam</b>
+      Having one years of full experience . I offer the technical expertise you are seeking for your web developer position</p>
+    <p>Since earning my bacelor's degree in internet and web development from XYZ ,I have served as a web developer at
+    <b class="text-warning">Bohubrihi</b> on of niggest premier digital mobile app and web development firm  In this position, Ihave led web
+     development project for clients in diverse industries including technology , manufacturing,pharmaceutical,hospitality, retal and financial services</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+ </div>
+ <div class="text-center">
+   <a href="{% url 'contact' %}" class="btn btn-outline-warning mx-5">Hire Me</a>
+   <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+
+ </div>
+
+</div>
+
+{% endblock content %}
